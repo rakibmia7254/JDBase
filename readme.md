@@ -1,4 +1,4 @@
-# jdbase
+# Jdbase
 
 jdbase is a lightweight Python library for interacting with databases.
 
@@ -20,7 +20,7 @@ To install jdbase, simply use pip:
 ```bash
 git clone https://github.com/rakibmia7254/JDBase
 
-cd JDbase
+cd JDBase
 pip install -r requirements.txt
 ```
 
