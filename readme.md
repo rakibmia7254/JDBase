@@ -30,7 +30,7 @@ pip install -r requirements.txt
 python run.py
 ```
 
-For More Read Docs [HERE](https://rakibmia7254.github.io/JDbase/)
+For More Read Docs [HERE](https://rakibmia7254.github.io/JDBase/)
 
 ## License
 
