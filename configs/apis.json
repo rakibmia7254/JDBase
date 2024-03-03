@@ -1,0 +1,14 @@
+[
+    {
+        "adminkey": {
+            "name": "admin",
+            "permission": [
+                "read",
+                "create",
+                "delete",
+                "update",
+                "create_user"
+            ]
+        }
+    }
+]
