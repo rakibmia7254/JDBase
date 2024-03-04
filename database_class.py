@@ -10,7 +10,7 @@ def create_db(name):
     if name in [list(d.keys())[0] for d in dbs]:
         return {"error":"database already exists"}
     data = []
-    file_path = os.path.join('databases', f'{name2}.json')
+    file_path = 'databases/'+f'{name2}.json'
     with open(file_path, 'w') as file:
         json.dump(data, file)
     with open('configs/dbs.json', 'w') as file:
@@ -67,6 +67,9 @@ class Database:
         if records:
             return records
         return {"error":"Record not found"}
+    
+    def get_all(self):
+        return self.database
     
     def update_record_by_query(self, query, updated_record):
         for record in self.database:

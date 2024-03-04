@@ -62,6 +62,8 @@ def database():
         if "read" not in permissions:
             return jsonify({'error': 'permission denied'}), 403
         database = database_class.Database(db_name)
+        if query=={"all":"all"}:
+            return jsonify(database.get_all())
         if database:
             return jsonify(database.get_by(query)), 200
         return jsonify({'error': 'Database not found'}), 404
